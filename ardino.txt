@@ -1,0 +1,115 @@
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<br />
+<div class="MsoNormal">
+<b style="mso-bidi-font-weight: normal;"><span style="font-family: &quot;courier new&quot;;">Function overloading:<o:p></o:p></span></b></div>
+<div class="MsoNormal">
+<br /></div>
+<div class="MsoNormal">
+<span style="font-family: &quot;courier new&quot;;">In c++ two or more
+function having the same name but the different parameter is called function
+overloading.<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style="font-family: &quot;courier new&quot;;"><span style="mso-spacerun: yes;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-tab-count: 1;">&nbsp;&nbsp;&nbsp; </span>To
+see why function overloading is important, first consider three functions
+defined by the c subset: <b style="mso-bidi-font-weight: normal;">abs(), labs(), </b><span style="mso-spacerun: yes;">&nbsp;</span>and <b style="mso-bidi-font-weight: normal;">fabs()
+</b>. The <b style="mso-bidi-font-weight: normal;">abs()</b> functions returns
+the absolute value of an integer, <b style="mso-bidi-font-weight: normal;">labs()
+</b><span style="mso-spacerun: yes;">&nbsp;</span>returns the absolute value of long,
+and <b style="mso-bidi-font-weight: normal;">fabs() </b><span style="mso-spacerun: yes;">&nbsp;</span>returns the absolute value of double. <o:p></o:p></span></div>
+<div class="MsoNormal">
+<br /></div>
+<div class="MsoNormal">
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; mso-layout-grid-align: none; text-autospace: none;">
+<span style="color: #231f20; font-family: &quot;courier&quot;; font-size: 10.0pt;">#include &lt;iostream&gt;<o:p></o:p></span><br />
+<div class="style" style="margin-left=10px solid green;">
+<span style="color: #231f20; font-family: courier; font-size: 10pt;">using namespace std;</span></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; mso-layout-grid-align: none; text-autospace: none;">
+<span style="color: #231f20; font-family: &quot;courier&quot;; font-size: 10.0pt;">// abs is overloaded three ways<o:p></o:p></span></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; mso-layout-grid-align: none; text-autospace: none;">
+<span style="color: #231f20; font-family: &quot;courier&quot;; font-size: 10.0pt;">int abs(int i);<o:p></o:p></span></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; mso-layout-grid-align: none; text-autospace: none;">
+<span style="color: #231f20; font-family: &quot;courier&quot;; font-size: 10.0pt;">double abs(double d);<o:p></o:p></span></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; mso-layout-grid-align: none; text-autospace: none;">
+<span style="color: #231f20; font-family: &quot;courier&quot;; font-size: 10.0pt;">long abs(long l);<o:p></o:p></span></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; mso-layout-grid-align: none; text-autospace: none;">
+<span style="color: #231f20; font-family: &quot;courier&quot;; font-size: 10.0pt;">int main()<o:p></o:p></span></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; mso-layout-grid-align: none; text-autospace: none;">
+<span style="color: #231f20; font-family: &quot;courier&quot;; font-size: 10.0pt;">{<o:p></o:p></span></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; mso-layout-grid-align: none; text-autospace: none;">
+<span style="color: #231f20; font-family: &quot;courier&quot;; font-size: 10.0pt;">cout &lt;&lt; abs(-10) &lt;&lt; "\n";<o:p></o:p></span></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; mso-layout-grid-align: none; text-autospace: none;">
+<span style="color: #231f20; font-family: &quot;courier&quot;; font-size: 10.0pt;">cout &lt;&lt; abs(-11.0) &lt;&lt; "\n";<o:p></o:p></span></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; mso-layout-grid-align: none; text-autospace: none;">
+<span style="color: #231f20; font-family: &quot;courier&quot;; font-size: 10.0pt;">cout &lt;&lt; abs(-9L) &lt;&lt; "\n";<o:p></o:p></span></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; mso-layout-grid-align: none; text-autospace: none;">
+<span style="color: #231f20; font-family: &quot;courier&quot;; font-size: 10.0pt;">return 0;<o:p></o:p></span></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; mso-layout-grid-align: none; text-autospace: none;">
+<span style="color: #231f20; font-family: &quot;courier&quot;; font-size: 10.0pt;">}<o:p></o:p></span></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; mso-layout-grid-align: none; text-autospace: none;">
+<span style="color: #231f20; font-family: &quot;courier&quot;; font-size: 10.0pt;">int abs(int i)<o:p></o:p></span></div>
+<br />
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; mso-layout-grid-align: none; text-autospace: none;">
+<span style="color: #231f20; font-family: &quot;courier&quot;; font-size: 10.0pt;">{<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style="color: #231f20; font-family: &quot;courier&quot;; font-size: 10.0pt; line-height: 115%;">cout
+&lt;&lt; "Using integer abs()\n";<o:p></o:p></span></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; mso-layout-grid-align: none; text-autospace: none;">
+<span style="color: #231f20; font-family: &quot;courier&quot;; font-size: 10.0pt;">return i&lt;0 ? -i : i;<o:p></o:p></span></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; mso-layout-grid-align: none; text-autospace: none;">
+<span style="color: #231f20; font-family: &quot;courier&quot;; font-size: 10.0pt;">}<o:p></o:p></span></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; mso-layout-grid-align: none; text-autospace: none;">
+<span style="color: #231f20; font-family: &quot;courier&quot;; font-size: 10.0pt;">double abs(double d)<o:p></o:p></span></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; mso-layout-grid-align: none; text-autospace: none;">
+<span style="color: #231f20; font-family: &quot;courier&quot;; font-size: 10.0pt;">{<o:p></o:p></span></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; mso-layout-grid-align: none; text-autospace: none;">
+<span style="color: #231f20; font-family: &quot;courier&quot;; font-size: 10.0pt;">cout &lt;&lt; "Using double abs()\n";<o:p></o:p></span></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; mso-layout-grid-align: none; text-autospace: none;">
+<span style="color: #231f20; font-family: &quot;courier&quot;; font-size: 10.0pt;">return d&lt;0.0 ? -d : d;<o:p></o:p></span></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; mso-layout-grid-align: none; text-autospace: none;">
+<span style="color: #231f20; font-family: &quot;courier&quot;; font-size: 10.0pt;">}<o:p></o:p></span></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; mso-layout-grid-align: none; text-autospace: none;">
+<span style="color: #231f20; font-family: &quot;courier&quot;; font-size: 10.0pt;">long abs(long l)<o:p></o:p></span></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; mso-layout-grid-align: none; text-autospace: none;">
+<span style="color: #231f20; font-family: &quot;courier&quot;; font-size: 10.0pt;">{<o:p></o:p></span></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; mso-layout-grid-align: none; text-autospace: none;">
+<span style="color: #231f20; font-family: &quot;courier&quot;; font-size: 10.0pt;">cout &lt;&lt; "Using long abs()\n";<o:p></o:p></span></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; mso-layout-grid-align: none; text-autospace: none;">
+<span style="color: #231f20; font-family: &quot;courier&quot;; font-size: 10.0pt;">return l&lt;0 ? -l : l;<o:p></o:p></span></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; mso-layout-grid-align: none; text-autospace: none;">
+</div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; mso-layout-grid-align: none; text-autospace: none;">
+<span style="color: #231f20; font-family: &quot;courier&quot;; font-size: 10.0pt;">}<o:p></o:p></span></div>
+</div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; mso-layout-grid-align: none; text-autospace: none;">
+<br /></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; mso-layout-grid-align: none; text-autospace: none;">
+<br /></div></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; mso-layout-grid-align: none; text-autospace: none;">
+<b style="mso-bidi-font-weight: normal;"><span style="color: #231f20; font-size: 10.0pt;">Output:</span></b><span style="color: #231f20; font-size: 10.0pt;"><o:p></o:p></span></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; mso-layout-grid-align: none; text-autospace: none;">
+<span style="color: #231f20; font-family: &quot;courier&quot;; font-size: 10.0pt;">Using integer abs()<o:p></o:p></span></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; mso-layout-grid-align: none; text-autospace: none;">
+<span style="color: #231f20; font-family: &quot;courier&quot;; font-size: 10.0pt;">10<o:p></o:p></span></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; mso-layout-grid-align: none; text-autospace: none;">
+<span style="color: #231f20; font-family: &quot;courier&quot;; font-size: 10.0pt;">Using double abs()<o:p></o:p></span></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; mso-layout-grid-align: none; text-autospace: none;">
+<span style="color: #231f20; font-family: &quot;courier&quot;; font-size: 10.0pt;">11<o:p></o:p></span></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; mso-layout-grid-align: none; text-autospace: none;">
+<span style="color: #231f20; font-family: &quot;courier&quot;; font-size: 10.0pt;">Using long abs()<o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style="color: #231f20; font-family: &quot;courier&quot;; font-size: 10.0pt; line-height: 115%;">9<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br /></div>
+<div class="MsoNormal">
+<span style="color: #231f20; font-family: &quot;courier&quot;; font-size: 10.0pt; line-height: 115%;">Here
+overloaded function is <b style="mso-bidi-font-weight: normal;">abs. </b><span style="mso-spacerun: yes;">&nbsp;</span>as you can see, at the above program function
+name <b style="mso-bidi-font-weight: normal;">abs</b> is same for three
+functions, but the parameter type(int,long,double) is deffr.<o:p></o:p></span></div>
+<div class="MsoNormal">
+<br /></div>
+<div class="MsoNormal">
+<span style="color: #231f20; font-family: &quot;courier&quot;; font-size: 10.0pt; line-height: 115%;">In
+General, overload a function, simply declare different version of it. You must
+observe one important restrictions when overloading a function that is, the
+number of the parameters of each overloaded function must be deffr.<o:p></o:p></span></div>
+<br /></div>
